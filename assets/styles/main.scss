@@ -1,0 +1,103 @@
+$unit: vh;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232931;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.scene {
+  height: 100vh;
+  margin-bottom: 140vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50#{$unit};
+  width: 50#{$unit};
+  flex-shrink: 0;
+  background-color: #3a4750;
+  border-radius: 2#{$unit};
+  margin: auto auto 12#{$unit};
+  padding: 1#{$unit};
+}
+
+.box {
+  width: 18%;
+  height: 18%;
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 3#{$unit};
+  padding: 1#{$unit};
+}
+
+.inner {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+
+  height: 100%;
+  justify-content: center;
+  border-radius: 1.2#{$unit};
+  background-color: rgba(#fff, 0.1);
+}
+.header {
+  position: absolute;
+  height: 35#{$unit};
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  font-size: 6#{$unit};
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 2#{$unit};
+}
+
+.properties {
+  color: #f6c90e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 58#{$unit};
+}
+
+.property {
+  padding: 1#{$unit} 2#{$unit};
+  background-color: rgba(#f6c90e, 0.1);
+  margin: 0.6#{$unit};
+  border-radius: 0.6#{$unit};
+  font-family: "Space Mono";
+  font-size: 1.8#{$unit};
+  cursor: pointer;
+}
+
+.property--active {
+  padding: 1#{$unit} 2#{$unit};
+  background-color: #f6c90e;
+  color: #232931;
+  margin: 0.6#{$unit};
+  border-radius: 0.6#{$unit};
+  font-family: "Space Mono";
+  font-size: 1.8#{$unit};
+  cursor: pointer;
+  transition: 0.2s;
+}
