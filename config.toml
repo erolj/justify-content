@@ -1,6 +1,10 @@
 baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "justify-content CSS"
 
 assetsDir = "assets"
 publishDir = "public"
+disableKinds = [
+    "taxonomy", 
+    "taxonomyTerm"
+    ]
